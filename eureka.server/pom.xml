@@ -47,6 +47,13 @@
 				<springProfilesActive>peer2</springProfilesActive>
 			</properties>
 		</profile>
+		<profile>
+			<id>peer3</id>
+			<properties>
+				<projectVersion>peer3</projectVersion>
+				<springProfilesActive>peer3</springProfilesActive>
+			</properties>
+		</profile>
 	</profiles>
 	<build>
 		<!-- 处理资源文件,根据springProfilesActive打包不同文件 -->
