@@ -10,9 +10,9 @@ mvn clean package -P peer2 -Dmaven.test.skip=true
 ## peer3 节点
 mvn clean package -P peer3 -Dmaven.test.skip=true
 # 部署
-nohup java -jar eureka.server-peer1.jar 2>&1 &
-nohup java -jar eureka.server-peer2.jar 2>&1 &
-nohup java -jar eureka.server-peer3.jar 2>&1 &
+nohup java -jar eureka.server-peer1.jar>peer1.out 2>&1 &
+nohup java -jar eureka.server-peer2.jar>peer2.out 2>&1 &
+nohup java -jar eureka.server-peer3.jar>peer3.out 2>&1 &
 
 # 访问
 http://ip:8761/
