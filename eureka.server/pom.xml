@@ -28,7 +28,7 @@
 		</dependency>
 	</dependencies>
 
-	<!-- maven profile 执行命令mvn clean package -P peer1 -->
+	<!-- maven profile 执行命令mvn clean package -Dmaven.skip.test=true -P peer1 -->
 	<profiles>
 		<profile>
 			<id>peer1</id>
