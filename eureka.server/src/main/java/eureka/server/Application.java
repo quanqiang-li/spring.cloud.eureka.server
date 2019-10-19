@@ -21,5 +21,4 @@ public class Application {
     	log.info("spring boot 使用的profile为{}",Arrays.deepToString(activeProfiles));
     	
     }
-
 }
